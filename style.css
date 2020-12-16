@@ -1,0 +1,8 @@
+.cursor {
+    /* background:gray; */
+    width:200px;
+    height:200px;
+    cursor:url(\images\cursor.png), default; 
+    /* cursor:url(C:\Users\eeshwar\Documents\GitHub\scope-css-assignment1\images\cursor.png),auto; */
+    /* cursor: url(images\cursor.png),auto; */
+  }
