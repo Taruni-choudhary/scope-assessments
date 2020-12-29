@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">Login form</div>
+            <div class="title signup"> Sign up</div>
+        </div>
+
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slider" id="login" checked>
+                <input type="radio" name="slider" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Sign Up</label>
+                <div class="slide-tab">
+
+                </div>
+
+            </div>
+            <div class="form-inner">
+                <form action='#' class="login">
+                    <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                        <input type="Password" placeholder="Password" required>
+                    </div>
+                    <div class="pass-link">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+                </form>
+                <form action='#' class="signup">
+                    <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                        <input type="Password" placeholder="Password" required>
+                    </div>
+                    <div class="field">
+                        <input type="Password" placeholder="Confirm Password" required>
+                    </div>
+                    <!-- <div class="pass-link">
+                        <a href="#">Forgot password?</a>
+                    </div> -->
+                    <div class="field">
+                        <input type="submit" value="Sign Up">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const loginForm = document.querySelector("form.login");
+        const signupForm = document.querySelector("form.signup");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%"; 
+        });
+    </script>
+</body>
+
+</html>
