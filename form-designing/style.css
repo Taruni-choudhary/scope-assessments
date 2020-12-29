@@ -138,7 +138,8 @@ input[type="radio"]{
 }
 
 .form-inner form .field input:focus {
-    border-color:#fa4299;
+    /* border-color:#fa4299; */
+    border-color:#3bb78f;
 }
 
 .form-inner form .pass-link {
